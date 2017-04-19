@@ -1,0 +1,22 @@
+{
+  "name": "job-queue",
+  "version": "1.0.0",
+  "description": "JavaScript Job Queue",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Calvin Truong",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "http": "0.0.0",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.9.4",
+    "request": "^2.81.0",
+    "utf8": "^2.1.2",
+    "valid-url": "^1.0.9"
+  }
+}
