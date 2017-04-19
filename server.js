@@ -9,7 +9,11 @@ var methodOverride = require('method-override');
 var Job = require("./public/models/job");
 
 // Connect to local mongodb
-mongoose.connect("mongodb://localhost/job-queue");
+mongoose.connect("mongodb://localhost/job-queue", function (err) {
+    if (err) {
+        console.log("Couldn't connect to server. Please make sure a local instance of MongoDB is running and restart the server!")
+    }
+});
 
 
 app.use(bodyParser.urlencoded({extended: true}));
